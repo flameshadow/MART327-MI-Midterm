@@ -1,0 +1,309 @@
+/* Font section */
+@font-face {
+    font-family: '19th Century Renegade';
+    src: url("http://www.monstersoft.com/OpenFonts/19th Century Renegade.otf") format("opentype");
+}
+/* Body section */
+
+body {
+    background-color: rgb(133, 120, 161);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header section */
+header {
+    margin-top: 24px;
+    background-color: darkgray;
+    min-height: 180px;
+
+    height:180px;
+    border: 3px solid darkred;
+    border-right-width: 0;
+    border-left-width: 0;
+}
+
+div#headerDiv {
+    float: left;
+    overflow:hidden;
+    text-align:left;
+    max-height:180px;
+    width:100%;
+    display:inline-block;
+
+}
+
+div#logo {
+    max-width:300px;
+    width:250px;
+    height: 180px;
+
+    max-height:180px;
+    background-color: transparent;
+    margin-left: 10%;
+    margin-right: 5%;
+    float:left;
+    text-align: center;
+}
+
+div#title {
+    background-color: transparent;
+    float: left;
+    max-height:180px;
+    height:180px;
+
+    width:60%;
+    padding-top:20px;
+}
+
+img[alt="logo"] {
+    object-fit: contain;
+    height:95%;
+    width:95%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+div#headerDiv H1 {
+    font-family: 'Bigshot One', cursive;
+    font-size: 40pt;
+    font-weight: normal;
+    letter-spacing: 5px;
+    color:rgb(84,61,136);
+}
+
+.trolley {
+    font-family: '19th Century Renegade', serif;
+}
+
+/* Nav section */
+
+nav {
+    background-color: transparent;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+ul.nav {
+    list-style-type: none;
+    margin: 16px;
+    padding-top: 6px;
+    padding-bottom: 2px;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+ul.nav a:hover { color: #fff !important; }
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+
+    font-family: 'Bigshot One', cursive;
+    font-weight: normal;
+    font-size: 18pt;
+    color: rgb(117, 208, 243);
+    text-align: center;
+    padding: 10px 30px 6px 0;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+/* Slideshow/horse section */
+
+div#slideshow {
+    width:100%;
+    height:825px;
+    background: url(../images/horse_painted.JPG) center center;
+    background-size:3264px 2448px;
+    margin: 0;
+    box-shadow: 0 15px 0 rgba(0,0,0,0.20);
+
+}
+
+#slideshow a {
+    font-family: '19th Century Renegade', serif;
+    font-size: 1.25em;
+    text-decoration: none;
+    color: mediumpurple;
+    background-color: black;
+    padding-left:3%;
+    padding-right:3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+    position:absolute;
+    left:10%;
+    bottom:-10%;
+}
+#slideshow a:hover { color: #fff !important; }
+
+
+/* Panels section */
+
+#container {
+    background-color: purple;
+    width:80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    float:left;
+    overflow:hidden;
+    text-align: left;
+    background: url(../images/horse_painted.JPG) top right;
+    background-size:3264px 2448px;
+    color: rgb(105, 62, 132);
+}
+
+div#topLeft {
+    max-width:45%;
+    max-height: 45%;
+    margin:2.5%;
+    width:calc(45% - 10px);
+    height:calc(45% - 10px);
+    background-color: rgba(255,0,255,0.25);
+    float:left;
+    text-align:center;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: orange;
+}
+.google-maps {
+    position: relative;
+    padding-bottom: 75%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+
+}
+.google-maps iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90% !important;
+    height: 90% !important;
+    border:0;
+}
+div#topRight {
+    margin:2.5%;
+    max-width:45%;
+    max-height: 45%;
+    width:45%;
+    height:45%;
+    background-color: rgba(244, 119, 20, 0.75);
+    float:left;
+    text-align: center;
+
+}
+
+.bottomContainer {
+    float:none;
+    display:flex;
+}
+
+
+
+div#bottomLeft {
+    margin:2.5%;
+
+    width:45%;
+    height:45%;
+    background-color: #6ccff6;
+    display:table-cell;
+}
+
+.bottomContainer p {
+    padding-left:5%;
+    padding-right:5%;
+
+    font-family: 'Bigshot One', cursive;
+    font-size: .9em;
+    letter-spacing:1px;
+
+}
+
+div#bottomRight {
+    margin:2.5%;
+    width:45%;
+
+    background-color: #0076a3;
+    display:table-cell;
+    color: rgba(255, 184, 252, 0.75);
+}
+
+div#bottomRight p {
+    padding-top:2.5%;
+}
+div#bottomLeft a {
+    font-style: italic;
+}
+div#bottomRight a {
+    font-style: italic;
+}
+
+
+span.bannertext1 {
+    width: 100%;
+    background-color: transparent;
+    color: rgba(255,255,255,0.75);
+    display:block;
+    padding-top: 8px;
+    padding-bottom: 4px;
+    font-family: 'Bigshot One', cursive;
+    font-size: 1.25em;
+    font-style: normal;
+    font-weight: lighter;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+span.bannertext2 {
+    width: 100%;
+    background-color: #6ccff6;
+    display:block;
+    padding-top: 8px;
+    padding-bottom: 4px;
+    font-family: 'Bigshot One', cursive;
+    font-size: 1.25em;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+span.bannertext3 {
+    width: 95%;
+    background-color: dodgerblue;
+    display:block;
+    padding-top: 8px;
+    padding-bottom: 4px;
+    opacity: 1;
+    font-family: 'Bigshot One', cursive;
+    font-size: 1.25em;
+    font-style: normal;
+    line-height: 1;
+    padding-left:5%;
+    color: rgba(255, 184, 252, 0.75);
+    letter-spacing:3px;
+    font-weight:lighter;
+}
+
+span.bannertext4 {
+    width: 95%;
+    background-color: #6ccff6;
+    color:purple;
+    display:block;
+    padding-top: 8px;
+    padding-bottom: 4px;
+    opacity: 1;
+    font-family: '19th Century Renegade', serif;
+    font-size: 1.25em;
+    font-style: normal;
+    line-height: 1;
+    padding-left:5%;
+    letter-spacing:3px;
+}
